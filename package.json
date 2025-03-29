@@ -7,6 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "dev-host": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --host --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -17,20 +18,25 @@
     "@nuxt/image": "^1.10.0",
     "@nuxt/scripts": "^0.11.5",
     "@nuxt/ui": "^3.0.2",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@pinia/nuxt": "^0.5.1",
     "@unhead/vue": "^2.0.2",
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vite-pwa/nuxt": "^0.10.6",
     "eslint": "^9.23.0",
+    "firebase": "^11.0.2",
     "nuxt": "^3.16.1",
+    "pusher-js": "^8.4.0-rc2",
     "typescript": "^5.8.2",
-    "vite-plugin-pwa": "^0.21.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "workbox-build": "^7.3.0",
-    "workbox-window": "^7.3.0"
+    "workbox-window": "^7.3.0",
+    "y-websocket": "^1.5.4"
   },
   "devDependencies": {
     "typescript": "^5.7.2",
+    "vite-plugin-pwa": "^0.21.2",
     "vue-tsc": "^2.2.0"
   },
   "overrides": {

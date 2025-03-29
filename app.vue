@@ -1,14 +1,18 @@
 <script setup lang="ts">
-//
+const { $pwa } = useNuxtApp();
+
+const userStore = useUserStore();
+
+onMounted(() => {
+  userStore.initUser();
+});
 </script>
 
 <template>
-  <div>
-    <NuxtPwaAssets />
-    <NuxtLoadingIndicator />
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <VitePwaManifest />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 
+  <UNotifications />
 </template>
