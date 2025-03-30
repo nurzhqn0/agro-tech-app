@@ -17,9 +17,9 @@
     "@nuxt/icon": "^1.11.0",
     "@nuxt/image": "^1.10.0",
     "@nuxt/scripts": "^0.11.5",
-    "@nuxt/ui": "^3.0.2",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@pinia/nuxt": "^0.5.1",
+    "@tailwindcss/vite": "^4.0.17",
     "@unhead/vue": "^2.0.2",
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vite-pwa/nuxt": "^0.10.6",
@@ -35,6 +35,10 @@
     "y-websocket": "^1.5.4"
   },
   "devDependencies": {
+    "@nuxt/ui": "^3.0.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17",
     "typescript": "^5.7.2",
     "vite-plugin-pwa": "^0.21.2",
     "vue-tsc": "^2.2.0"

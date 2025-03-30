@@ -8,7 +8,7 @@ const router = useRouter();
 
 const links = [
   {
-    label: "Главная",
+    label: "Home",
     icon: "i-gravity-ui-house",
     to: "/dashboard",
   },

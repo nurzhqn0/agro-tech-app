@@ -1,16 +1,11 @@
-<script setup lang="ts">
-const showSplash = useState("splash", () => true);
-
-onMounted(() => {
-  setTimeout(() => {
-    showSplash.value = false;
-  }, 2000);
-});
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <SplashScreen v-if="showSplash" />
-  <NuxtPage v-else />
+  <main class="w-full font-medium">
+    <Suspense>
+      <slot />
+    </Suspense>
+  </main>
 </template>
 
 <style></style>

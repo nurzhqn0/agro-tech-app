@@ -1,21 +1,8 @@
-<script setup>
-import { ref, onMounted } from "vue";
-
-const isVisible = ref(true);
-
-onMounted(() => {
-  setTimeout(() => {
-    isVisible.value = false;
-  }, 2000);
-});
-</script>
+<script setup></script>
 
 <template>
-  <div
-    v-if="isVisible"
-    class="fixed inset-0 flex items-center justify-center bg-white z-50"
-  >
-    <img src="/logo.png" alt="Logo" class="w-32 h-32 animate-bounce" />
+  <div class="fixed inset-0 flex items-center justify-center bg-green-500 z-50">
+    <img src="/favicon.svg" alt="Logo" class="w-32 h-32" />
   </div>
 </template>
 
